@@ -1,3 +1,5 @@
+package src.pacman;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.util.HashSet;
@@ -131,16 +133,16 @@ public class PacMan extends JPanel implements ActionListener, KeyListener {
         setFocusable(true);
 
         
-        wallImage = new ImageIcon(getClass().getResource("images/wall.png")).getImage();
-        blueGhostImage = new ImageIcon(getClass().getResource("images/blueGhost.png")).getImage();
-        orangeGhostImage = new ImageIcon(getClass().getResource("images/orangeGhost.png")).getImage();
-        pinkGhostImage = new ImageIcon(getClass().getResource("images/pinkGhost.png")).getImage();
-        redGhostImage = new ImageIcon(getClass().getResource("images/redGhost.png")).getImage();
+        wallImage = new ImageIcon(getClass().getResource("src/images/wall.png")).getImage();
+        blueGhostImage = new ImageIcon(getClass().getResource("src/images/blueGhost.png")).getImage();
+        orangeGhostImage = new ImageIcon(getClass().getResource("src/images/orangeGhost.png")).getImage();
+        pinkGhostImage = new ImageIcon(getClass().getResource("src/images/pinkGhost.png")).getImage();
+        redGhostImage = new ImageIcon(getClass().getResource("src/images/redGhost.png")).getImage();
 
-        pacmanUpImage = new ImageIcon(getClass().getResource("images/pacmanUp.png")).getImage();
-        pacmanDownImage = new ImageIcon(getClass().getResource("images/pacmanDown.png")).getImage();
-        pacmanLeftImage = new ImageIcon(getClass().getResource("images/pacmanLeft.png")).getImage();
-        pacmanRightImage = new ImageIcon(getClass().getResource("images/pacmanRight.png")).getImage();
+        pacmanUpImage = new ImageIcon(getClass().getResource("src/images/pacmanUp.png")).getImage();
+        pacmanDownImage = new ImageIcon(getClass().getResource("src/images/pacmanDown.png")).getImage();
+        pacmanLeftImage = new ImageIcon(getClass().getResource("src/images/pacmanLeft.png")).getImage();
+        pacmanRightImage = new ImageIcon(getClass().getResource("src/images/pacmanRight.png")).getImage();
 
         loadMap();
         for (Block ghost : ghosts) {
